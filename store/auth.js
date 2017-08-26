@@ -7,6 +7,9 @@ export const state = () => ({
 export const mutations = {
   setUser (state, user) {
     state.user = user || null
+  },
+  login (state, user) {
+    state.user = user || null
     if (process.browser) {
       window.localStorage.setItem('user', JSON.stringify(user))
       Cookie.set('user', user)
