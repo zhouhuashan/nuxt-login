@@ -11,14 +11,12 @@ export const mutations = {
   login (state, user) {
     state.user = user || null
     if (process.browser) {
-      window.localStorage.setItem('user', JSON.stringify(user))
       Cookie.set('user', user)
     }
   },
   logout (state) {
     state.user = null
     if (process.browser) {
-      window.localStorage.removeItem('user')
       Cookie.remove('user')
     }
   }

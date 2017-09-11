@@ -1,6 +1,7 @@
-import { getUserFromCookie, getUserFromLocalStorage } from '@/utils/helpers'
+import Cookie from 'js-cookie'
+import { getUserFromCookie } from '@/utils/helpers'
 
-export default function ({ app, store, route, params, error, redirect, hotReload, isServer, req }) {
-  const loggedUser = isServer ? getUserFromCookie(req) : getUserFromLocalStorage()
+export default function ({ store, isServer, req }) {
+  const loggedUser = isServer ? getUserFromCookie(req) : Cookie.get('user')
   if (loggedUser) store.commit('auth/setUser', loggedUser)
 }
