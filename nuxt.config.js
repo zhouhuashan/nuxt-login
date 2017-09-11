@@ -16,6 +16,9 @@ module.exports = {
       default: '~/apollo/network-interfaces/default.js'
     }
   },
+  modules: [
+    '@nuxtjs/bootstrap-vue'
+  ],
   build: {
     extend (config, ctx) {
       if (ctx.dev && ctx.isClient) {

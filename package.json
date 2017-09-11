@@ -1,8 +1,8 @@
 {
   "name": "nuxt-login",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "Samuell <samuell.patro@gmail.com>",
+  "description": "Nuxt Auth example with graphQL",
+  "author": "Samuell",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -13,9 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/apollo": "^1.0.1",
+    "@nuxtjs/apollo": "^2.0.0",
+    "@nuxtjs/bootstrap-vue": "^2.0.2",
     "js-cookie": "^2.1.4",
-    "nuxt": "^1.0.0-rc3"
+    "nuxt": "^1.0.0-rc11"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

@@ -1,6 +1,6 @@
 import { createNetworkInterface } from 'apollo-client'
 
-export default (store) => {
+export default ({ store }) => {
   const networkInterface = createNetworkInterface({
     uri: 'https://api.graph.cool/simple/v1/cj1645vlwanoe01184baf05ne'
   })
