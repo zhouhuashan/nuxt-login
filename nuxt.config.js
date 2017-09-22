@@ -11,6 +11,9 @@ module.exports = {
     ]
   },
   loading: { color: '#3B8070' },
+  router: {
+    middleware: ['check-auth']
+  },
   apollo: {
     networkInterfaces: {
       default: '~/apollo/network-interfaces/default.js'
